@@ -1,8 +1,6 @@
 import React from 'react';
 import './WeatherSearchBar.css';
 
-import Forecast from '../Forecast/Forecast';
-
 const apiKey = "55fe5bd473ee901c99c9ce28fe810b9b";
 
 class WeatherSearchBar extends React.Component {
@@ -15,8 +13,11 @@ class WeatherSearchBar extends React.Component {
       country: undefined,
       humidity: undefined,
       description: undefined,
-      error: undefined
+      error: undefined,
+      showTempInfo: false
     }
+
+    this.toggleShowTempInfo = this.toggleShowTempInfo.bind(this);
   }
 
   getWeather = async (e) => {
@@ -47,28 +48,30 @@ class WeatherSearchBar extends React.Component {
     }
   }
 
+  toggleShowTempInfo() {
+    this.setState({
+      showTempInfo: !this.showTempInfo
+    })
+  }
+
   render() {
     return(
       <div className="weather-search-bar-div">
 
       <form onSubmit={this.getWeather}>
-    		<input type="text" name="city" placeholder="City..."/>
-    		<input type="text" name="country" placeholder="Country..."/>
-    		<button>Get Weather</button>
+    		<input className="weather-input" type="text" name="city" placeholder="City"/>
+    		<input className="weather-input" type="text" name="country" placeholder="Country Abbrev"/>
+    		<button onClick={this.toggleShowTempInfo} className="weather-submit-button">Get Weather</button>
     	</form>
 
-        <div>
-          <Forecast />
-        </div>
 
-        <div>
-          <h2>{this.state.temperature}</h2>
-          <h2>{this.state.humidity}</h2>
-          <h2>{this.state.city}</h2>
-          <h2>{this.state.country}</h2>
-          <h2>{this.state.description}</h2>
-          <h2>{this.state.error}</h2>
-        </div>
+        {this.state.showTempInfo ?
+          <div className="temp-info">
+          <p>{this.state.temperature}° F | {this.state.description} | {this.state.humidity}% humidity</p>
+            <h2>{this.state.error}</h2>
+          </div>
+          : ''
+        }
 
       </div>
     )

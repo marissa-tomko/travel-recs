@@ -1,0 +1,43 @@
+.weather-search-bar-div {
+}
+
+.weather-input {
+  text-align: center;
+  width: 200px;
+  height: 50px;
+  margin: 5px;
+
+}
+
+.weather-submit-button {
+  width: 200px;
+  height: 55px;
+  color: #494949 !important;
+  background: #ffffff;
+  border-radius: 6px;
+}
+
+.weather-submit-button:hover {
+color: #ffffff !important;
+background: #D2A09E;
+transition: all 0.4s ease 0s;
+}
+
+.temp-info {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 100;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+  .weather-input {
+    width: 100px;
+  }
+  .weather-submit-button {
+    width: 100px;
+
+  }
+}

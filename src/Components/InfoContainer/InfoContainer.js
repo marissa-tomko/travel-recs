@@ -4,8 +4,8 @@ import './InfoContainer.css';
 class InfoContainer extends React.Component {
   render() {
     return(
-      <div className="container-text">
-        <h2>{this.props.text}</h2>
+      <div>
+        <p className="container-text">{this.props.text}</p>
       </div>
     )
   }

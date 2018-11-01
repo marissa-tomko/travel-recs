@@ -1,86 +1,36 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './App.css';
 
-import BusinessList from '../BusinessList/BusinessList';
-import YelpSearchBar from '../YelpSearchBar/YelpSearchBar';
-import Navbar from '../Navbar/Navbar';
-import InfoContainer from '../InfoContainer/InfoContainer';
-import CitySquare from '../CitySquare/CitySquare';
-import WeatherSearchBar from '../WeatherSearchBar/WeatherSearchBar';
-import CityPage from '../CityPage/CityPage';
+import Home from '../Home/Home';
+import About from '../About/About';
+import Contact from '../Contact/Contact';
 
+import { BrowserRouter as Router, Route, Link, Switch, Redirect } from 'react-router-dom';
 
-
-class App extends React.Component {
-
+class App extends Component {
   render() {
-    return(
-      <div>
-        <div className="navbar-div">
-          <Navbar />
-        </div>
-        <div className="main-summary container-div">
-          <InfoContainer
-            text="One couple's attempt at recording where they've been & what they loved."
-          />
-        </div>
+    return (
+      <Router>
+        <div>
+          <div className="navbar-div">
+            <ul>
+                <li className="logo">ACMT Travel</li>
 
-        <div className="container-div">
-
-          <div className="container-left text-container">
-            <InfoContainer
-              text="Where we've been & what we recommend"
-            />
+              <div className="menu">
+                <li className="menu-item"><Link style={{"text-decoration": "none", color: "#000000"}} to="/home">Home</Link></li>
+                <li className="menu-item"><Link style={{"text-decoration": "none", color: "#000000"}} to="/about">About</Link></li>
+                <li className="menu-item"><Link style={{"text-decoration": "none", color: "#000000"}} to="/contact">Contact</Link></li>
+              </div>
+            </ul>
           </div>
 
-          <div className="container-right">
-
-              <div className="city-square">
-                <CitySquare cityAbbrev="SEA"/>
-              </div>
-              <div className="city-square">
-                <CitySquare cityAbbrev="BCN"/>
-              </div>
-              <div className="city-square">
-                <CitySquare cityAbbrev="SFO"/>
-              </div>
-
-              <div className="city-square">
-                <CitySquare cityAbbrev="PDX"/>
-              </div>
-              <div className="city-square">
-                <CitySquare cityAbbrev="LIS"/>
-              </div>
-              <div className="city-square">
-                <CitySquare cityAbbrev="SLC"/>
-              </div>
-
-          </div>
+          <Route path="/home" component={ Home } />
+          <Route path="/about" component={ About } />
+          <Route path="/contact" component={ Contact } />
 
         </div>
-
-        <div className="container-div">
-
-          <div className="container-left">
-
-          </div>
-
-          <div className="container-right text-container">
-            <InfoContainer
-              text="Trying to decide what to pack? Check out the weather!"
-            />
-          </div>
-          <div className="container-right">
-            <WeatherSearchBar />
-          </div>
-
-        </div>
-
-
-        <CityPage cityName="Portland"/>
-      </div>
+      </Router>
     )
   }
 }
-
 export default App;
