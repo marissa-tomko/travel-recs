@@ -19,12 +19,17 @@ class Contact extends React.Component {
         <div className="contact-form">
 
           <form action="https://formspree.io/marissatomko@gmail.com" method="POST">
-            <input type="text" name="message" placeholder="What's up?" />
-            <input type="email" name="replyto" placeholder="What's your email?" />
+            <div>
+              <input className="contact-message" type="text" name="message" placeholder="What's up?" />
+            </div>
+
+            <div>
+              <input className="contact-email" type="email" name="replyto" placeholder="What's your email?" />
+            </div>
 
             <input type="hidden" name="_subject" value="Contact form" />
 
-            <input type="submit" value="Send" />
+            <input className="contact-submit-button" type="submit" value="Send" />
           </form>
 
         </div>

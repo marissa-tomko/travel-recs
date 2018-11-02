@@ -3,14 +3,14 @@
 
 .weather-input {
   text-align: center;
-  width: 200px;
+  width: 30%;
   height: 50px;
   margin: 5px;
 
 }
 
 .weather-submit-button {
-  width: 200px;
+  width: 30%;
   height: 55px;
   color: #494949 !important;
   background: #ffffff;

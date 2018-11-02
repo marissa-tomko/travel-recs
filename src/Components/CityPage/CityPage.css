@@ -1,0 +1,37 @@
+.city-page-div {
+  text-align: center;
+}
+
+.city-page-header {
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 40px;
+  width: 60%;
+  margin: auto;
+}
+
+.city-page-text {
+  width: 50%;
+  margin: 20px auto;
+  font-size: 20px;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.city-column-header {
+  font-weight: 100;
+}
+
+.rec-name {
+  font-weight: bolder;
+}

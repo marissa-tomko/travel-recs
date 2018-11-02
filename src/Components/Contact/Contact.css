@@ -11,7 +11,7 @@ img {
 }
 
 .contact-text {
-  width: 50%;
+  width: 40%;
   margin: auto;
 }
 
@@ -21,4 +21,31 @@ img {
 
 hr {
   width: 90%;
+}
+
+.contact-message {
+  width: 40%;
+  height: 200px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.contact-email {
+  width: 40%;
+  text-align: center;
+}
+
+.contact-submit-button {
+  width: 200px;
+  height: 55px;
+  color: #494949 !important;
+  background: #ffffff;
+  border-radius: 6px;
+  margin-top: 10px;
+}
+
+.contact-submit-button:hover {
+color: #ffffff !important;
+background: #D2A09E;
+transition: all 0.4s ease 0s;
 }
