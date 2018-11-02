@@ -1,6 +1,7 @@
 import React from 'react';
 import './Home.css';
 
+
 import BusinessList from '../BusinessList/BusinessList';
 import YelpSearchBar from '../YelpSearchBar/YelpSearchBar';
 import InfoContainer from '../InfoContainer/InfoContainer';
@@ -8,7 +9,7 @@ import CitySquare from '../CitySquare/CitySquare';
 import WeatherSearchBar from '../WeatherSearchBar/WeatherSearchBar';
 import CityPage from '../CityPage/CityPage';
 
-
+import { BrowserRouter as Router, Route, Link, Switch, Redirect } from 'react-router-dom';
 
 class Home extends React.Component {
 
@@ -32,23 +33,23 @@ class Home extends React.Component {
           <div className="container-right">
 
               <div className="city-square">
-                <CitySquare cityAbbrev="SEA"/>
+                <Link style={{"text-decoration": "none", color: "#FFFFFF"}} to="/seattle"><CitySquare cityAbbrev="SEA"/></Link>
               </div>
               <div className="city-square">
-                <CitySquare cityAbbrev="BCN"/>
+                <Link style={{"text-decoration": "none", color: "#FFFFFF"}} to="/barcelona"><CitySquare cityAbbrev="BCN"/></Link>
               </div>
               <div className="city-square">
-                <CitySquare cityAbbrev="SFO"/>
+                <Link style={{"text-decoration": "none", color: "#FFFFFF"}} to="/sanfrancisco"><CitySquare cityAbbrev="SFO"/></Link>
               </div>
 
               <div className="city-square">
-                <CitySquare cityAbbrev="PDX"/>
+                <Link style={{"text-decoration": "none", color: "#FFFFFF"}} to="/portland"><CitySquare cityAbbrev="PDX"/></Link>
               </div>
               <div className="city-square">
-                <CitySquare cityAbbrev="LIS"/>
+                <Link style={{"text-decoration": "none", color: "#FFFFFF"}} to="/lisbon"><CitySquare cityAbbrev="LIS"/></Link>
               </div>
               <div className="city-square">
-                <CitySquare cityAbbrev="SLC"/>
+                <Link style={{"text-decoration": "none", color: "#FFFFFF"}} to="/saltlakecity"><CitySquare cityAbbrev="SLC"/></Link>
               </div>
 
           </div>

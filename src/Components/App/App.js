@@ -5,6 +5,13 @@ import Home from '../Home/Home';
 import About from '../About/About';
 import Contact from '../Contact/Contact';
 
+import Barcelona from '../Cities/Barcelona';
+import Lisbon from '../Cities/Lisbon';
+import Portland from '../Cities/Portland';
+import SaltLakeCity from '../Cities/SanFrancisco';
+import SanFrancisco from '../Cities/Barcelona';
+import Seattle from '../Cities/Seattle';
+
 import { BrowserRouter as Router, Route, Link, Switch, Redirect } from 'react-router-dom';
 
 class App extends Component {
@@ -27,6 +34,15 @@ class App extends Component {
           <Route path="/home" component={ Home } />
           <Route path="/about" component={ About } />
           <Route path="/contact" component={ Contact } />
+
+          <Route path="/barcelona" component={ Barcelona } />
+          <Route path="/lisbon" component={ Lisbon } />
+          <Route path="/portland" component={ Portland } />
+          <Route path="/saltlakecity" component={ SaltLakeCity } />
+          <Route path="/sanfrancisco" component={ SanFrancisco } />
+          <Route path="/seattle" component={ Seattle } />
+
+
 
         </div>
       </Router>
