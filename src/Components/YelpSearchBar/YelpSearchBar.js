@@ -68,11 +68,11 @@ class YelpSearchBar extends React.Component {
           </ul>
         </div>
         <div className="YelpSearchBar-fields">
-          <input placeholder="Search Businesses" onChange={this.handleTermChange} />
-          <input placeholder="Where?" onChange={this.handleLocationChange}/>
+          <input className="yelp-input" placeholder="Search Businesses" onChange={this.handleTermChange} />
+          <input className="yelp-input" placeholder="Where?" onChange={this.handleLocationChange}/>
         </div>
         <div className="YelpSearchBar-submit">
-          <a onClick={this.handleSearch}>Go</a>
+          <button className="yelp-submit-button" onClick={this.handleSearch}>Go</button>
         </div>
       </div>
     );

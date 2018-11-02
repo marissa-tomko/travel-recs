@@ -18,9 +18,9 @@
 }
 
 .weather-submit-button:hover {
-color: #ffffff !important;
-background: #D2A09E;
-transition: all 0.4s ease 0s;
+  color: #ffffff !important;
+  background: #D2A09E;
+  transition: all 0.4s ease 0s;
 }
 
 .temp-info {

@@ -11,7 +11,6 @@
   display: flex;
   justify-content: center;
   margin-bottom: 2.22rem;
-  color: #ffffff;
 }
 
 .YelpSearchBar-sort-options li {
@@ -32,8 +31,8 @@
 
 .YelpSearchBar-sort-options li.active,
 .YelpSearchBar-sort-options li.active:hover {
-  border-bottom: 1px solid #f0c36c;
-  color: #f0c36c;
+  border-bottom: 1px solid #64AD64 ;
+  color: #64AD64;
 }
 
 .YelpSearchBar-fields {
@@ -46,7 +45,7 @@
   width: 21rem;
   padding: .66rem 1rem;
   margin-right: 2.22rem;
-  border: 1px solid #fff;
+  border: 1px solid grey;
   border-radius: 4px;
   font-size: .77rem;
   font-weight: 500;
@@ -60,18 +59,18 @@
   text-align: center;
 }
 
-.YelpSearchBar-submit a {
-  border-radius: 4px;
-  padding: .72rem 1.7rem;
-  background-color: #cca353;
-  color: #ffffff;
-  font-weight: 600;
-  transition: background-color .5s;
+.yelp-submit-button {
+  width: 20%;
+  height: 55px;
+  color: #494949 !important;
+  background: #ffffff;
+  border-radius: 6px;
 }
 
-.YelpSearchBar-submit a:hover {
-  cursor: pointer;
-  background-color: #a7874b;
+.yelp-submit-button:hover {
+  color: #ffffff !important;
+  background: #71B471;
+  transition: all 0.4s ease 0s;
 }
 
 @media only screen and (max-width: 560px) {
