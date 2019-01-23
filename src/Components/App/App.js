@@ -8,11 +8,11 @@ import Contact from '../Contact/Contact';
 import Barcelona from '../Cities/Barcelona';
 import Lisbon from '../Cities/Lisbon';
 import Portland from '../Cities/Portland';
-import SaltLakeCity from '../Cities/SanFrancisco';
-import SanFrancisco from '../Cities/Barcelona';
+import SaltLakeCity from '../Cities/SaltLakeCity';
+import SanFrancisco from '../Cities/SanFrancisco';
 import Seattle from '../Cities/Seattle';
 
-import { BrowserRouter as Router, Route, Link, Switch, Redirect } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
 class App extends Component {
   render() {
@@ -41,8 +41,6 @@ class App extends Component {
           <Route path="/saltlakecity" component={ SaltLakeCity } />
           <Route path="/sanfrancisco" component={ SanFrancisco } />
           <Route path="/seattle" component={ Seattle } />
-
-
 
         </div>
       </Router>

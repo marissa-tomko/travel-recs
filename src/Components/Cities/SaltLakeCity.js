@@ -5,7 +5,7 @@ class SaltLakeCity extends React.Component {
   render() {
     return(
       <div>
-        <CityPage cityName="SaltLakeCity"/>
+        <CityPage cityName="Salt Lake City"/>
       </div>
     )
   }

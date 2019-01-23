@@ -67,7 +67,7 @@ class WeatherSearchBar extends React.Component {
 
         {this.state.showTempInfo ?
           <div className="temp-info">
-          <p>{this.state.temperature}° F | {this.state.description} | {this.state.humidity}% humidity</p>
+          <p>{Math.round(this.state.temperature)}° F | {this.state.description} | {this.state.humidity}% humidity</p>
             <h2>{this.state.error}</h2>
           </div>
           : ''
