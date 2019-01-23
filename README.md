@@ -1,3 +1,38 @@
+# ACMT Travel
+An application used to document restaurants, bars and activities in the cities my boyfriend and I travel to. Built using React.
+
+## Purpose
+
+I created this application to practice a set of technical skills. They include:
+* React Router
+* Different ways to implement APIs
+* Styling without using CSS library
+
+## Project Status
+I have completed the bulk of the technical part of this app, but do plan to implement changes to better the user experience. These include:
+- [ ] Image responsiveness on home page
+
+- [ ] Editing Yelp search on city pages to have a default city entered for search
+
+- [ ] Creating a favicon
+
+Additionally, because this project was to practice technical skills, much of the content is still dummy text from my favorite [Loren Ipsum generator](https://pirateipsum.me/). I will be updating this to include real information soon!
+
+## Project Screen Shots and GIFs
+Coming soon!
+
+## View Project
+ACMT Travel is hosted on Heroku [here](http://travel-recs.herokuapp.com/sanfrancisco)
+
+## Reflection
+
+This is a project I built to practice using React and fetching information from APIs (in this case, [OpenWeather](https://openweathermap.org/api) and [Yelp](https://www.yelp.com/developers/documentation/v3)). I also wanted to try React Router for routing.
+
+I wanted to build an application that allowed users to not only view my favorite places to go in my favorite cities, but also give them the opportunity to discover new places for themselves. I started this process by using the `create-react-app` boilerplate.
+
+
+--------------
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
