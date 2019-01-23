@@ -16,7 +16,6 @@ class WeatherSearchBar extends React.Component {
       error: undefined,
       showTempInfo: false
     }
-
     this.toggleShowTempInfo = this.toggleShowTempInfo.bind(this);
   }
 
@@ -63,22 +62,17 @@ class WeatherSearchBar extends React.Component {
     		<input className="weather-input" type="text" name="country" placeholder="Country Abbrev"/>
     		<button onClick={this.toggleShowTempInfo} className="weather-submit-button">Get Weather</button>
     	</form>
-
-
-        {this.state.showTempInfo ?
+        {
+          this.state.showTempInfo ?
           <div className="temp-info">
           <p>{Math.round(this.state.temperature)}° F | {this.state.description} | {this.state.humidity}% humidity</p>
             <h2>{this.state.error}</h2>
           </div>
           : ''
         }
-
       </div>
     )
   }
-
 }
-
-
 
 export default WeatherSearchBar;

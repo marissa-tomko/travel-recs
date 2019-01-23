@@ -110,7 +110,6 @@ class CityPage extends React.Component {
           </div>
         </div>
 
-
         <div>
           <p className="city-page-text">Not finding anything you love in {this.props.cityName}? Look for something else here!</p>
         </div>

@@ -15,7 +15,6 @@ class YelpSearchBar extends React.Component {
     this.handleLocationChange = this.handleLocationChange.bind(this);
     this.handleSearch = this.handleSearch.bind(this);
 
-
     this.sortByOptions = {
       'Best Match': 'best_match',
       'Highest Rated': 'rating',

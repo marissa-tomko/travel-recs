@@ -37,8 +37,6 @@ class About extends React.Component {
           Belay yo-ho-ho keelhaul squiffy black spot yardarm spyglass sheet transom
           heave to.
         </p>
-
-
       </div>
     )
   }

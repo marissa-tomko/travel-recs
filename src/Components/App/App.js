@@ -22,7 +22,6 @@ class App extends Component {
           <div className="navbar-div">
             <ul>
                 <li className="logo">ACMT Travel</li>
-
               <div className="menu">
                 <li className="menu-item"><Link style={{"text-decoration": "none", color: "#000000"}} to="/home">Home</Link></li>
                 <li className="menu-item"><Link style={{"text-decoration": "none", color: "#000000"}} to="/about">About</Link></li>
@@ -41,7 +40,6 @@ class App extends Component {
           <Route path="/saltlakecity" component={ SaltLakeCity } />
           <Route path="/sanfrancisco" component={ SanFrancisco } />
           <Route path="/seattle" component={ Seattle } />
-
         </div>
       </Router>
     )
