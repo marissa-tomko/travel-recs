@@ -22,7 +22,7 @@ Additionally, because this project was to practice technical skills, much of the
 Coming soon!
 
 ## View Project
-ACMT Travel is hosted on Heroku [here](http://travel-recs.herokuapp.com/sanfrancisco)
+ACMT Travel is hosted on Heroku [here](http://travel-recs.herokuapp.com/home)
 
 ## Reflection
 
