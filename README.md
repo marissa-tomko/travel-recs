@@ -19,7 +19,9 @@ I have completed the bulk of the technical part of this app, but do plan to impl
 Additionally, because this project was to practice technical skills, much of the content is still dummy text from my favorite [Loren Ipsum generator](https://pirateipsum.me/). I will be updating this to include real information soon!
 
 ## Project Screen Shots and GIFs
-Coming soon!
+![Home Page](http://g.recordit.co/UhwAEKbSv7.gif)
+
+![City Page](http://g.recordit.co/BCrmrXgHKJ.gif)
 
 ## View Project
 ACMT Travel is hosted on Heroku [here](http://travel-recs.herokuapp.com/home)
